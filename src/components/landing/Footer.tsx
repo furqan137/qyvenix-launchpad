@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, MessageCircle } from "lucide-react";
+import { Code2, AtSign, Briefcase, MessageCircle } from "lucide-react";
 
 const groups = [
   { title: "Company", links: ["Home", "About", "Products", "Contact"] },
@@ -6,9 +6,9 @@ const groups = [
 ];
 
 const socials = [
-  { icon: Github, label: "GitHub" },
-  { icon: Twitter, label: "X" },
-  { icon: Linkedin, label: "LinkedIn" },
+  { icon: Code2, label: "GitHub" },
+  { icon: AtSign, label: "X" },
+  { icon: Briefcase, label: "LinkedIn" },
   { icon: MessageCircle, label: "Discord" },
 ];
 

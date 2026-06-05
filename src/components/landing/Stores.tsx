@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Smartphone, Apple, Package, Github, Box } from "lucide-react";
+import { Smartphone, Apple, Package, Code2, Box } from "lucide-react";
 
 const stores = [
   { icon: Smartphone, name: "Google Play", desc: "Android apps & games" },
   { icon: Apple, name: "Apple App Store", desc: "iOS experiences" },
   { icon: Package, name: "APKPure", desc: "Direct APK distribution" },
   { icon: Box, name: "F-Droid", desc: "Open source releases" },
-  { icon: Github, name: "GitHub Releases", desc: "Source & builds" },
+  { icon: Code2, name: "GitHub Releases", desc: "Source & builds" },
 ];
 
 export function Stores() {
