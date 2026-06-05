@@ -18,21 +18,21 @@ export function About() {
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             Qyvenix is a modern software studio dedicated to building high-quality mobile experiences.
-            From productivity apps and AI tools to privacy-focused solutions and immersive mobile games,
-            our mission is to create products that people love using every day.
+            From productivity apps and privacy-focused solutions to immersive mobile games, our mission
+            is to create products that people love using every day.
           </p>
-          <div className="mt-8 grid grid-cols-3 gap-4">
+          <ul className="mt-8 space-y-3">
             {[
-              { k: "5+", v: "Years" },
-              { k: "12+", v: "Products" },
-              { k: "80+", v: "Countries" },
-            ].map((s) => (
-              <div key={s.v} className="glass rounded-2xl p-4">
-                <div className="text-2xl font-bold text-gradient-brand">{s.k}</div>
-                <div className="text-xs text-muted-foreground">{s.v}</div>
-              </div>
+              "Design-led approach to every product we ship",
+              "Built for performance, scale and reliability",
+              "Privacy and user trust at the core",
+            ].map((point) => (
+              <li key={point} className="flex items-start gap-3 text-sm text-foreground/85">
+                <div className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-brand" />
+                {point}
+              </li>
             ))}
-          </div>
+          </ul>
         </motion.div>
 
         <motion.div

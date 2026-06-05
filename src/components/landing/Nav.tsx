@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Logo } from "./Logo";
 
 const links = [
   { label: "About", href: "#about" },
-  { label: "Products", href: "#products" },
+  { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
   { label: "Contact", href: "#contact" },
 ];
@@ -29,10 +30,7 @@ export function Nav() {
         }`}
       >
         <a href="#top" className="flex items-center gap-2.5">
-          <div className="relative h-8 w-8 rounded-lg bg-gradient-brand shadow-glow">
-            <div className="absolute inset-[2px] rounded-md bg-background/40 backdrop-blur" />
-            <div className="absolute inset-0 flex items-center justify-center font-display text-sm font-bold text-white">Q</div>
-          </div>
+          <Logo className="h-9 w-9" />
           <span className="font-display text-lg font-semibold tracking-tight">Qyvenix</span>
         </a>
 
