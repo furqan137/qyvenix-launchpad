@@ -5,12 +5,11 @@ import { Hero } from "@/components/landing/Hero";
 import { TrustBar } from "@/components/landing/TrustBar";
 import { About } from "@/components/landing/About";
 import { Features } from "@/components/landing/Features";
-import { Portfolio } from "@/components/landing/Portfolio";
+import { Values } from "@/components/landing/Values";
 import { Process } from "@/components/landing/Process";
-import { Stats } from "@/components/landing/Stats";
-import { Testimonials } from "@/components/landing/Testimonials";
 import { TechStack } from "@/components/landing/TechStack";
 import { Stores } from "@/components/landing/Stores";
+import { FAQ } from "@/components/landing/FAQ";
 import { Contact } from "@/components/landing/Contact";
 import { Footer } from "@/components/landing/Footer";
 
@@ -21,13 +20,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Qyvenix builds premium Android & iOS apps, AI-powered tools, privacy-focused solutions, and mobile games used by people worldwide.",
+          "Qyvenix is a modern software studio building premium Android & iOS apps, privacy-focused tools, productivity software, and mobile games.",
       },
       { property: "og:title", content: "Qyvenix — Innovative Apps. Exceptional Experiences." },
       {
         property: "og:description",
         content:
-          "Premium mobile apps, AI experiences, privacy tools, and games crafted by Qyvenix.",
+          "Premium mobile apps, privacy tools, productivity software, and games crafted by Qyvenix.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -54,12 +53,11 @@ function Index() {
       <TrustBar />
       <About />
       <Features />
-      <Portfolio />
+      <Values />
       <Process />
-      <Stats />
-      <Testimonials />
       <TechStack />
       <Stores />
+      <FAQ />
       <Contact />
       <Footer />
     </main>

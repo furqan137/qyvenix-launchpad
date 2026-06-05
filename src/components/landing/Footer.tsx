@@ -1,7 +1,8 @@
 import { Code2, AtSign, Briefcase, MessageCircle } from "lucide-react";
+import { Logo } from "./Logo";
 
 const groups = [
-  { title: "Company", links: ["Home", "About", "Products", "Contact"] },
+  { title: "Company", links: ["Home", "About", "Services", "Contact"] },
   { title: "Legal", links: ["Privacy Policy", "Terms of Service"] },
 ];
 
@@ -19,10 +20,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5">
-              <div className="relative h-9 w-9 rounded-lg bg-gradient-brand shadow-glow">
-                <div className="absolute inset-[2px] rounded-md bg-background/40 backdrop-blur" />
-                <div className="absolute inset-0 flex items-center justify-center font-display text-base font-bold text-white">Q</div>
-              </div>
+              <Logo className="h-10 w-10" />
               <span className="font-display text-xl font-semibold">Qyvenix</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">

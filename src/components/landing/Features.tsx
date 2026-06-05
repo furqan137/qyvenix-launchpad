@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Smartphone, Apple, Brain, Shield, Zap, Gamepad2 } from "lucide-react";
+import { Smartphone, Apple, Layers, Shield, Zap, Gamepad2 } from "lucide-react";
 
 const features = [
   { icon: Smartphone, title: "Android Applications", desc: "Native and cross-platform mobile apps engineered for performance and scale.", grad: "from-purple-500/20 to-blue-500/10" },
   { icon: Apple, title: "iOS Applications", desc: "Premium, polished experiences designed for the Apple ecosystem.", grad: "from-pink-500/20 to-purple-500/10" },
-  { icon: Brain, title: "AI Powered Solutions", desc: "Smart automation and intelligent features that adapt to every user.", grad: "from-cyan-500/20 to-blue-500/10" },
+  { icon: Layers, title: "Cross-Platform Apps", desc: "One codebase, every device. Consistent experiences across all platforms.", grad: "from-cyan-500/20 to-blue-500/10" },
   { icon: Shield, title: "Privacy & Security Apps", desc: "Secure and reliable digital experiences with zero compromises.", grad: "from-blue-500/20 to-purple-500/10" },
   { icon: Zap, title: "Productivity Tools", desc: "Apps designed to streamline daily life and unlock deep focus.", grad: "from-cyan-500/20 to-pink-500/10" },
   { icon: Gamepad2, title: "Mobile Games", desc: "Fun, engaging mobile games built around story, art and play.", grad: "from-pink-500/20 to-cyan-500/10" },
@@ -12,7 +12,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="relative px-4 py-28">
+    <section id="services" className="relative px-4 py-28">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export function Features() {
             Software with a <span className="text-gradient-brand">point of view</span>.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Six disciplines. One obsession with quality. We ship products people actually keep using.
+            Six disciplines. One obsession with quality. We craft products people actually keep using.
           </p>
         </motion.div>
 
